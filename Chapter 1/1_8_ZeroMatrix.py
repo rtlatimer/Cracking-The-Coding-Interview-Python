@@ -27,10 +27,9 @@ input2 = [[0, 2, 4, 6],
 		  [-3, -1, 1, 3]]
 
 def zero_matrix(m):
-	zero_row = []
-	zero_col = []
-	found_zero = False
-	for row in range(len(m)):
+	zero_row = [] # blank list for rows
+	zero_col = [] # blank list for columns
+	for row in range(len(m)): 
 		for col in range(len(m)):
 			if m[row][col] == 0:
 				zero_row.append(row)
